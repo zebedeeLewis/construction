@@ -18,8 +18,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
 .wrapper {
   background-color: var(--default-primary-color);
+  /*overflow-x: hidden;*/
+  color: var(--secondary-text-color);
 }
 
 .navigation-bar {
@@ -45,7 +54,6 @@
 
 .page-banner {
   height: 90vh;
-  width: 100vw;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   overflow: hidden;
@@ -88,4 +96,36 @@
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
+}
+
+
+.section {
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.section--intro {
+  background-color: white;
+}
+
+.page-subsection {
+  margin-bottom: 4.5rem;
+}
+
+.page-subsection--selling-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.selling-point__caption {
+  width: 100%;
+  text-align: center;
+}
+
+.section--intro .btn {
+  width: 20rem;
 }
