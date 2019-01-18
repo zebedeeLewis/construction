@@ -75,6 +75,10 @@ p {
   background-repeat: no-repeat;
 }
 
+.thin-heading {
+	font-weight: 300;
+}
+
 .test {
   position: fixed;
 }
