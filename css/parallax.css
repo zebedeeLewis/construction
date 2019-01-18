@@ -1,0 +1,66 @@
+/*
+This scale calculations for this prallax module
+comes from this document by Rajoshi Ghosh and 
+Tanmai Gopal of 34 Cross:
+
+https://css-tricks.com/tour-performant-responsive-css-site/
+*/
+
+
+:root {
+  --perspective: 1;
+}
+
+.parallax__viewport {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: calc(var(--perspective)*1vh);
+}
+
+
+.parallax__none {
+  position: relative;
+  z-index: 0;
+}
+
+
+.parallax {
+  position: relative;
+  transform-style: preserve-3d;
+  z-index: -1;
+  margin-left: -.4rem;
+}
+
+
+.parallax__foreground {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.parallax::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.parallaxLayer1 {
+  --z-offset: -1;
+  
+  --denominator: calc(var(--perspective) - var(--z-offset));
+  --scale-down-factor: calc(1 + (var(--z-offset)/var(--denominator)));
+  --scale-up-factor: calc( 1 / var(--scale-down-factor));
+  
+  transform:
+    translateZ(calc(var(--z-offset)*1vh))
+    scale(var(--scale-up-factor));
+}

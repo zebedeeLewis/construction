@@ -106,13 +106,9 @@ p {
   padding-bottom: 4.5rem;
 }
 
-.section--intro {
-  background-color: white;
-}
+.section--intro { background-color: white; }
 
-.page-subsection {
-  margin-bottom: 4.5rem;
-}
+.page-subsection { margin-bottom: 4.5rem; }
 
 .page-subsection--selling-points {
   display: flex;
@@ -126,6 +122,17 @@ p {
   text-align: center;
 }
 
-.section--intro .btn {
-  width: 20rem;
+.section--intro .btn { width: 20rem; }
+
+.footer {
+  color: white;
+  font-size: 1.5rem;
 }
+
+.footer-links { list-style: none; }
+
+.footer-links a { color: white; }
+
+.social-links { justify-content: space-evenly; }
+
+.copyright { text-align: center; }
