@@ -26,14 +26,15 @@ p {
 }
 
 .wrapper {
-  background-color: var(--default-primary-color);
   /*overflow-x: hidden;*/
   color: var(--secondary-text-color);
 }
 
 .navigation-bar {
-  height: 10vh;
+  background-color: var(--default-primary-color);
+  height: 15vh;
   font-size: 1.5rem;
+  padding-bottom: 5vh;
 }
 
 .navigation-bar .navbar-brand {
@@ -57,6 +58,7 @@ p {
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   overflow: hidden;
+  margin-top: -5vh;
 }
 
 .page-banner .carousel-inner {
@@ -104,6 +106,7 @@ p {
   border-top-left-radius: 2rem;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+  margin-top: -1.5rem;
 }
 
 .section--intro { background-color: white; }
@@ -124,7 +127,21 @@ p {
 
 .section--intro .btn { width: 20rem; }
 
+.section--products {
+  background-color: var(--accent-color);
+}
+
+.section--products {
+  color: white;
+}
+
+.product-image {
+  border-radius: 1rem;
+  box-shadow: var(--shadow-four);
+}
+
 .footer {
+  background-color: var(--default-primary-color);
   color: white;
   font-size: 1.5rem;
 }
