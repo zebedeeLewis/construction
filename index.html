@@ -15,63 +15,60 @@
   </head>
   <body>
     <div class="wrapper parallax__viewport">
-      <div class="parallax parallaxLayer1">
-        <nav class="navigation-bar navbar navbar-expand-lg navbar-dark">
-          <div class="container">
-            <a class="navbar-brand" href="#">Dynam</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-             data-target="#navbarContent" aria-expanded="false"
-             aria-controls="navbarContent" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar--main sticky-top navbar navbar-expand-lg navbar-light">
+        <a class="navbar--main__brand navbar-brand" href="#">Dynam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+         data-target="#navbarContent" aria-expanded="false"
+         aria-controls="navbarContent" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-              <a class="btn btn-cta ml-auto" type="button">
-                Free UX Consultation
-              </a>
-              <ul class="navbar-nav justify-content-between col-5 ml-5">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Our Work</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <header id="banner-carousel"
-         class="page-banner carousel slide carousel-fade" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#banner-carousel"
+        <div class="navbar--main__collapse collapse navbar-collapse"
+         id="navbarContent">
+          <ul class="navbar-nav justify-content-between col-5 ml-5">
+            <li class="nav-item active">
+              <a class="nav-link nav-link--main" href="#">Our Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--main" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--main" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="banner__backdrop parallax parallaxLayer1">
+        <div id="carousel--banner"
+         class="carousel--banner carousel slide carousel-fade"
+         data-ride="carousel">
+          <ol class="carousel-indicators carousel--banner__indicators">
+            <li data-target="#carousel--banner"
              data-slide-to="0" class="active"></li>
-            <li data-target="#banner-carousel"
-             data-slide-to="1" class="active"></li>
-            <li data-target="#banner-carousel"
-             data-slide-to="2" class="active"></li>
+            <li data-target="#carousel--banner"
+             data-slide-to="1" ></li>
+            <li data-target="#carousel--banner"
+             data-slide-to="2" ></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item carousel-item--1 active">
-              <div class="carousel-caption d-none d-md-flex">
+          <div class="carousel--banner__inner carousel-inner w-100 h-100">
+            <div class="carousel-item carousel-item--banner1 active">
+              <div class="carousel-caption carousel--banner-caption d-none d-md-flex">
                 <p class="h1">Slide One</p>
                 <p>
                 We build amazing custom products for our clients
                 </p>
               </div>
             </div>
-            <div class="carousel-item carousel-item--2">
-              <div class="carousel-caption d-none d-md-flex">
+            <div class="carousel-item carousel-item--banner2">
+              <div class="carousel-caption carousel--banner-caption d-none d-md-flex">
                 <p class="h1">Slide Two</p>
                 <p>
                 We build amazing custom products for our clients
                 </p>
               </div>
             </div>
-            <div class="carousel-item carousel-item--3">
-              <div class="carousel-caption d-none d-md-flex">
+            <div class="carousel-item carousel-item--banner3">
+              <div class="carousel-caption carousel--banner-caption d-none d-md-flex">
                 <p class="h1">Slide Three</p>
                 <p>
                 We build amazing custom products for our clients
@@ -79,18 +76,18 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#banner-carousel"
+          <a class="carousel-control-prev" href="#carousel--banner"
            role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#banner-carousel"
+          <a class="carousel-control-next" href="#carousel--banner"
            role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </header>
-      </div>
+        </div>
+      </header>
       <main class="main parallax__none">
         <div class="section section--intro">
           <div class="page-subsection container">
