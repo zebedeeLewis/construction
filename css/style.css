@@ -43,8 +43,8 @@ p {
 
 .navbar--main__collapse {
   background-color: white;
-	border-radius: 0.2rem;
-	box-shadow: var(--shadow-three);
+  border-radius: 0.2rem;
+  box-shadow: var(--shadow-three);
 }
 
 .btn-cta {
@@ -82,7 +82,7 @@ p {
 }
 
 .thin-heading {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 .carousel-item--banner1 {
@@ -110,57 +110,74 @@ p {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 25%;
-	border-style: solid;
-	border-width: 0.1rem;
-	border-color: transparent;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: transparent;
 }
 
 .carousel--banner__indicators li.active {
-	background-color: var(--default-primary-color);
-	border-color: var(--primary-text-color);
+  background-color: var(--default-primary-color);
+  border-color: var(--primary-text-color);
 }
 
 
 .section {
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
-  margin-top: -1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  background-color: white;
 }
 
-.section--intro { background-color: white; }
+.section--alternate {
+}
 
-.page-subsection { margin-bottom: 4.5rem; }
+.section--intro { padding-top: 3rem; }
 
-.page-subsection--selling-points {
+/*.page-subsection { margin-bottom: 4.5rem; }*/
+
+.page-subsection--values {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.selling-point__caption {
-  width: 100%;
+.value {
+  height: 10.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value__icon {
+  height: 6rem;
+  width: 6rem;
+}
+
+.value__caption {
   text-align: center;
+  width: 100%;
 }
 
-.section--intro .btn { max-width: 20rem; }
+/*.section--intro .btn { max-width: 20rem; }*/
 
-.section--products {
-  background-color: var(--accent-color);
+.section--services .btn { max-width: 20rem; }
+
+.service-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/backhoe.jpg");
+  height: 50vh;
 }
 
-.section--products {
-  color: white;
+.btn-outline-cta {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
-.section--products .btn { max-width: 20rem; }
-
-.product-image {
-  border-radius: 1rem;
-  box-shadow: var(--shadow-four);
+.service-list {
+  list-style-image: url("../img/checkmark_icon.svg");
 }
+
 
 .footer {
   background-color: var(--default-primary-color);
