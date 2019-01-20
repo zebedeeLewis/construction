@@ -179,15 +179,20 @@ p {
 }
 
 
+.footer a,
 .footer {
+  color: var(--primary-text-color);
+}
+
+.footer {
+  border-top-style: solid;
+  border-width: .5rem;
+  border-color: var(--dark-primary-color);
   background-color: var(--default-primary-color);
-  color: white;
   font-size: 1.5rem;
 }
 
 .footer-links { list-style: none; }
-
-.footer-links a { color: white; }
 
 .social-links { justify-content: space-evenly; }
 
