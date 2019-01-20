@@ -47,14 +47,35 @@ p {
   box-shadow: var(--shadow-three);
 }
 
-.btn-cta {
-  color: var(--default-primary-color) !important;
-  height: 2.5rem;
+.cta-form {
+  position: absolute;
+  top: 0;
+  z-index: 14;
+  width: 70%;
+  margin: 1.5rem 15% 0 15%;
+}
+
+.range-graduation {
   display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  border-radius: .3rem ;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: .2rem;
+}
+
+.range-graduation__unit {
+  text-align: center;
+}
+
+.cta-form__service-options {
   background-color: white;
+  padding: .5rem .5rem .5rem .5rem;
+  border-radius: 0.3rem;
+}
+
+.cta-form__collapse {
+  background-color: hsla(0, 100%, 100%, 0.5);
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .banner__backdrop {
@@ -174,6 +195,16 @@ p {
 .btn-outline-cta {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.btn-cta {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--default-primary-color);
+  color: var(--primary-text-color);
 }
 
 .service-list {
