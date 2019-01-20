@@ -24,6 +24,14 @@
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
    id="defs905"><linearGradient
      inkscape:collect="always"
+     id="linearGradient1512"><stop
+       style="stop-color:#000000;stop-opacity:1;"
+       offset="0"
+       id="stop1508" /><stop
+       style="stop-color:#000000;stop-opacity:0;"
+       offset="1"
+       id="stop1510" /></linearGradient><linearGradient
+     inkscape:collect="always"
      id="linearGradient913"><stop
        style="stop-color:#ffffff;stop-opacity:1;"
        offset="0"
@@ -34,6 +42,14 @@
      inkscape:collect="always"
      xlink:href="#linearGradient913"
      id="linearGradient915"
+     x1="0"
+     y1="256"
+     x2="512"
+     y2="256"
+     gradientUnits="userSpaceOnUse" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient1512"
+     id="linearGradient1514"
      x1="0"
      y1="256"
      x2="512"
@@ -52,7 +68,7 @@
    id="namedview903"
    showgrid="false"
    inkscape:zoom="1.125"
-   inkscape:cx="256"
+   inkscape:cx="111.55556"
    inkscape:cy="256"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
@@ -60,21 +76,21 @@
    inkscape:current-layer="Layer_1" />
 <g
    id="g870"
-   style="fill:#ffffff;fill-opacity:1">
+   style="fill:#000000;fill-opacity:1">
 	<g
    id="g868"
-   style="fill:#ffffff;fill-opacity:1">
+   style="fill:#000000;fill-opacity:1">
 		<g
    id="g866"
-   style="fill:#ffffff;fill-opacity:1">
+   style="fill:#000000;fill-opacity:1">
 			<path
    d="M469.333,0H42.667C19.14,0,0,19.14,0,42.667v426.667C0,492.86,19.14,512,42.667,512h196.267V341.333h-68.267v-102.4     h68.267v-42.667c0-57.489,44.672-106.197,101.7-110.908l94.566-0.026v102.4h-85.333c-4.702,0-8.533,3.831-8.533,8.533v42.667     h85.333v102.4h-85.333V512h128C492.86,512,512,492.86,512,469.333V42.667C512,19.14,492.86,0,469.333,0z"
    id="path862"
-   style="fill:#ffffff;fill-opacity:1" />
+   style="fill:#000000;fill-opacity:1" />
 			<path
    d="M409.6,256h-85.333v-59.733c0-14.114,11.486-25.6,25.6-25.6h68.267V102.4h-76.8C293.794,106.351,256,147.593,256,196.267     V256h-68.267v68.267H256V512h68.267V324.267H409.6V256z"
    id="path864"
-   style="fill:#ffffff;fill-opacity:1" />
+   style="fill:#000000;fill-opacity:1" />
 		</g>
 	</g>
 </g>
