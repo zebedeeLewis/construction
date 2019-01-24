@@ -5,7 +5,7 @@
   --default-primary-color: #FFEB3B;
   --light-primary-color: #FFF9C4;
   --text-primary-color: #FFFFFF;
-  --accent-color: #FF5252;
+  --accent-color: #FF5722;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --divider-color: #BDBDBD;
@@ -67,18 +67,18 @@ p {
 
 .carousel-caption__heading,
 .carousel-caption__body {
-	text-align: left;
-	max-width: 44rem;
+  text-align: left;
+  max-width: 44rem;
 }
 
 .carousel-caption__heading {
   font-family: "Abril Fatface", cursive;
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 .carousel-caption__body {
-	line-height: 1.5rem;
-	font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .thin-heading {
@@ -104,7 +104,7 @@ p {
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-	margin-bottom: 9rem;
+  margin-bottom: 9rem;
   text-shadow: var(--shadow-one);
 }
 
@@ -131,12 +131,40 @@ p {
   background-color: white;
 }
 
-.section--alternate {
+.section--intro { padding-top: 0; }
+
+.caution-tape {
+  background-color: var(--light-primary-color);
+  width: 100%;
+  overflow: hidden;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.section--intro { padding-top: 3rem; }
+.caution-tape__bar {
+  width: 3rem;
+  height: 100%;
+  background-color: var(--default-primary-color);
+  transform: skew(-20deg);
+  margin-right: 3rem;
+  flex: 0 0 auto;
+}
 
-/*.page-subsection { margin-bottom: 4.5rem; }*/
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--light-primary-color);
+}
+
+.intro-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/workers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+}
 
 .page-subsection--values {
   display: flex;
@@ -154,7 +182,8 @@ p {
 
 .value__icon {
   height: 6rem;
-  width: 6rem;
+  //width: 6rem;
+  width: 100%;
 }
 
 .value__caption {
@@ -217,6 +246,15 @@ p {
     border-radius: 0;
     box-shadow: none;
     text-shadow: var(--shadow-one);
+  }
+
+  .intro-image {
+    width: 50%;
+  }
+
+  .intro-caption {
+    width: 50%;
+    padding-right: 10%;
   }
 
   .navbar--main {
