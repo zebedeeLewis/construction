@@ -52,37 +52,6 @@ p {
   box-shadow: var(--shadow-three);
 }
 
-.cta-form {
-  position: absolute;
-  top: 0;
-  z-index: 14;
-  width: 70%;
-  margin: 3rem 15% 0 15%;
-}
-
-.range-graduation {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: .2rem;
-}
-
-.range-graduation__unit {
-  text-align: center;
-}
-
-.cta-form__service-options {
-  background-color: white;
-  padding: .5rem .5rem .5rem .5rem;
-  border-radius: 0.3rem;
-}
-
-.cta-form__collapse {
-  background-color: hsla(0, 100%, 100%, 0.5);
-  border-bottom-left-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
-}
-
 .carousel--banner {
   height: 100vh;
   overflow: hidden;
