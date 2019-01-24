@@ -7,6 +7,7 @@
   --text-primary-color: #FFFFFF;
   --accent-color: #FF5722;
   --primary-text-color: #212121;
+  --second-background-color: hsla(53.9,100%,88.4%, 0.5);
   --secondary-text-color: #757575;
   --divider-color: #BDBDBD;
   --shadow-one: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -134,12 +135,15 @@ p {
 .section--intro { padding-top: 0; }
 
 .caution-tape {
-  background-color: var(--light-primary-color);
+  background-color: var(--second-background-color);
   width: 100%;
   overflow: hidden;
-  height: 3rem;
+  height: 6rem;
   display: flex;
   justify-content: flex-start;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: .3rem;
 }
 
 .caution-tape__bar {
@@ -154,7 +158,7 @@ p {
 .intro {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--light-primary-color);
+  background-color: var(--second-background-color);
 }
 
 .intro-image {
@@ -174,32 +178,33 @@ p {
 }
 
 .value {
-  height: 10.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .value__icon {
-  height: 6rem;
-  //width: 6rem;
-  width: 100%;
-}
-
-.value__caption {
-  text-align: center;
-  width: 100%;
+  height: 10rem;
+  width: 10rem;
+  max-width: 100%;
 }
 
 /*.section--intro .btn { max-width: 20rem; }*/
 
-.section--services .btn { max-width: 20rem; }
+.section--services .btn {
+  max-width: 20rem;
+  padding-top: 0;
+}
 
-.service-image {
+.section--services::before {
+  content: " ";
+  display: block;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/backhoe.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 .btn-outline-cta {
@@ -241,6 +246,12 @@ p {
 
 .copyright { text-align: center; }
 
+@media (min-width: 425px) {
+  .section--services::before {
+    background-position: 0% 60%;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar--main__collapse {
     border-radius: 0;
@@ -257,8 +268,48 @@ p {
     padding-right: 10%;
   }
 
+  /*
+  .value {
+    height: 12rem;
+  }
+  */
+
+  .value__icon {
+    height: 9rem;
+    width: 100%;
+  }
+
+  .section--services {
+    position: relative;
+  }
+
+  .section--services::before {
+    position: absolute;
+    height: 100vh;
+    background-size: 95% 95%;
+  }
+
+  .service-caption {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 10%;
+    padding-right: 0%;
+    font-size: 1.5rem;
+    text-shadow: 0 1px 3px white, 0 1px 2px white;
+  }
+
   .navbar--main {
     height: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-caption {
+    padding-right: 10%;
   }
 }
 
