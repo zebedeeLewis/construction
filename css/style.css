@@ -46,7 +46,7 @@ p { margin-top: 0; }
   text-transform: uppercase;
 }
 
-.navbar--main .nav-item.active a {
+.navbar--main .nav-link.active {
   color: var(--default-primary-color) !important;
   font-weight: 500;
   text-shadow: var(--text-shadow-one);
@@ -125,7 +125,7 @@ p { margin-top: 0; }
   background-color: white;
 }
 
-.section--intro { padding-top: 0; }
+.section--about { padding-top: 0; }
 
 .intro {
   display: flex;
@@ -148,7 +148,7 @@ p { margin-top: 0; }
   background-position: 70% 50%;
 }
 
-.page-subsection--values {
+.values {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -207,7 +207,7 @@ p { margin-top: 0; }
   margin-top: -.3em;
 }
 
-/*.section--intro .btn { max-width: 20rem; }*/
+/*.section--about .btn { max-width: 20rem; }*/
 
 
 .section--services .btn {
@@ -257,6 +257,16 @@ p { margin-top: 0; }
 .section--contact {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+
+.contact-form {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(0, 100%, 100%, 0.6);
+  padding: 1rem;
+  border-radius: .5rem;
 }
 
 .section--cards {
@@ -397,6 +407,12 @@ p { margin-top: 0; }
     height: 10rem;
     width: 6rem;
     max-width: 100%;
+  }
+
+  .section--contact {
+    background-image: url("../img/closed_for_construction.jpg");
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
 

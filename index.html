@@ -17,7 +17,7 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <div id="wrapper" data-spy="scroll" data-target="#navbar--main"
+    <div id="wrapper" data-spy="scroll" data-target="#nav--primary"
       data-offset="0" class="wrapper parallax__viewport">
       <nav id="navbar--main"
        class="navbar--main sticky-top navbar navbar-expand-md navbar-light">
@@ -55,9 +55,9 @@
                 </li>
               </ul>
             </div>
-            <ul class="navbar-nav nav justify-content-between">
-              <li class="nav-item active">
-                <a class="nav-link nav-link--main" href="#about">
+            <ul id="nav--primary" class="navbar-nav nav justify-content-between">
+              <li class="nav-item ">
+                <a class="nav-link active nav-link--main" href="#about">
                   About Us
                 </a>
               </li>
@@ -129,7 +129,7 @@
         </div>
       </header>
       <main class="main parallax__none">
-        <div id="about" class="section section--intro">
+        <div id="about" class="section section--about">
           <div class="intro">
             <div class="intro-image">
             </div>
@@ -151,7 +151,7 @@
               </p>
             </div>
           </div>
-          <div class="page-subsection--values container ">
+          <div class="values container ">
             <div class="row">
               <div class="value col-12 col-md-6 col-lg-3">
                 <img src="./img/checklist_icon.svg"
@@ -190,18 +190,20 @@
         </div>
 
         <div class="section section--services container">
-          <div id="services" class="service-caption">
-            <ul class="service-list">
-              <li>Backhoe Rental</li>
-              <li>Sand and Gravel</li>
-              <li>Construction Equipment Rental</li>
-              <li>Dump Truck Rental</li>
-            </ul>
+          <div class="service-description">
+            <div id="services" class="service-caption">
+              <ul class="service-list">
+                <li>Backhoe Rental</li>
+                <li>Sand and Gravel</li>
+                <li>Construction Equipment Rental</li>
+                <li>Dump Truck Rental</li>
+              </ul>
+            </div>
+            <a href="#"
+             class="btn w-100 mx-auto btn-lg btn-outline-cta">
+              Request a Quote
+            </a>
           </div>
-          <a href="#"
-           class="btn w-100 mx-auto btn-lg btn-outline-cta">
-            Request a Quote
-          </a>
         </div>
         <div class="section section--cards ">
           <div class="container d-flex flex-wrap justify-content-between">
@@ -281,7 +283,7 @@
       <footer class="footer section parallax__none">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <ul class="footer-links pl-4">
                 <li><a href="#">About Us</a></li>
                 <li>
@@ -296,7 +298,7 @@
                 <li><a href="#">Contact Us</a></li>
               </ul>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
               <address class="address">
                 <ul class="pl-4">
                   <li class="address-item address-item--location">
@@ -315,7 +317,7 @@
                 </ul>
               </address>
             </div>
-            <div class="map col-12 col-sm-6 col-md-4 offset-md-2">
+            <div class="map col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-2">
               <div class="embed-responsive embed-responsive-1by1">
                 <iframe
                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3812.090029013478!2d-89.0605953560822!3d17.165831171867293!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbz!4v1548538835470"
