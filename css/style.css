@@ -213,8 +213,12 @@ p { margin-top: 0; }
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/backhoe.jpg");
+  background: grey;
   height: 60vh;
+}
+
+.section--services.lazy-bg-loaded::before {
+  background: url("../img/backhoe.jpg");
 }
 
 .btn-outline-cta {
@@ -267,18 +271,19 @@ p { margin-top: 0; }
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background: grey;
 }
 
-.service-card--1__header {
-  background-image: url("../img/dump_truck.jpg");
+.service-card--1__header.lazy-bg-loaded {
+  background: url("../img/dump_truck.jpg");
 }
 
-.service-card--2__header {
-  background-image: url("../img/hydrolic_hammer.jpg");
+.service-card--2__header.lazy-bg-loaded {
+  background: url("../img/hydrolic_hammer.jpg");
 }
 
-.service-card--3__header {
-  background-image: url("../img/john_deere.jpg");
+.service-card--3__header.lazy-bg-loaded {
+  background: url("../img/john_deere.jpg");
 }
 
 .footer a,
@@ -387,9 +392,13 @@ p { margin-top: 0; }
   }
 
   .section--contact {
-    background-image: url("../img/closed_for_construction.jpg");
+    background: grey;
     background-attachment: fixed;
     background-size: cover;
+  }
+
+  .section--contact.lazy-bg-loaded {
+    background: url("../img/closed_for_construction.jpg");
   }
 }
 

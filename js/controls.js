@@ -51,6 +51,7 @@ let hasClass = (targetElement, className) => {
 }
 
 let init = () => {
+    document.addEventListener("DOMContentLoaded", yall);
     $(CONST.ID.WRAPPER).addEventListener("scroll", 
         () => toggleStuck($(CONST.ID.NAVBAR), $(CONST.ID.WRAPPER)));
 }
