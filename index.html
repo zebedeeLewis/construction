@@ -40,7 +40,6 @@
            aria-controls="navbarContent" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div id="navbarContent"
            class="navbar--main__collapse flex-wrap collapse navbar-collapse justify-content-end">
             <div class="w-100 d-none d-md-block text-right">
@@ -154,40 +153,40 @@
           <div class="values container ">
             <div class="row">
               <div class="value col-12 col-md-6 col-lg-3">
-								<div class="value__icon mx-auto">
-									<img src="./img/checklist_icon.svg"
-									 class="w-100 h-100 d-block">
-								</div>
+                <div class="value__icon mx-auto">
+                  <img src="./img/checklist_icon.svg"
+                   class="w-100 h-100 d-block">
+                </div>
                 <p class="h3 value__heading">Quality Assurance</p>
                 <p class="value__caption">
                 We create unique products, pusshing the envelope of possibility and
                 </p>
               </div>
               <div class="value col-12 col-md-6 col-lg-3">
-								<div class="value__icon mx-auto">
-									<img src="./img/shield_icon.svg"
-									 class="w-100 h-100 d-block">
-								</div>
+                <div class="value__icon mx-auto">
+                  <img src="./img/shield_icon.svg"
+                   class="w-100 h-100 d-block">
+                </div>
                 <p class="value__heading">Reliable Service</p>
                 <p class="value__caption">
                 We create unique products, pusshing the envelope of possibility and
                 </p>
               </div>
               <div class="value col-12 col-md-6 col-lg-3">
-								<div class="value__icon mx-auto">
-									<img src="./img/magnify_icon.svg"
-									 class="w-100 h-100 d-block">
-								</div>
+                <div class="value__icon mx-auto">
+                  <img src="./img/magnify_icon.svg"
+                   class="w-100 h-100 d-block">
+                </div>
                 <p class="h3 value__heading">Detail Oriented</p>
                 <p class="value__caption">
                 We create unique products, pusshing the envelope of possibility and
                 </p>
               </div>
               <div class="value col-12 col-md-6 col-lg-3">
-								<div class="value__icon mx-auto">
-									<img src="./img/worker_icon.svg"
-									 class="w-100 h-100 d-block">
-								</div>
+                <div class="value__icon mx-auto">
+                  <img src="./img/worker_icon.svg"
+                   class="w-100 h-100 d-block">
+                </div>
                 <p class="h3 value__heading">Customer Oriented</p>
                 <p class="value__caption">
                 We create unique products, pusshing the envelope of possibility and
@@ -209,10 +208,11 @@
                 </ul>
               </div>
               <div class="col-12">
-                <a href="#"
+                <button type="button" data-toggle="modal"
+                 data-target="#modal--quote"
                  class="btn w-100 mx-auto btn-lg btn-outline-cta">
                   Request a Quote
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -230,7 +230,10 @@
                       combining various technologies that work in unison to deliver
                       experiences that amaze and delight users.
                       </p>
-                      <a href="#" class="btn btn-cta">Request Quote</a>
+                      <button type="button" data-toggle="modal"
+                       data-target="#modal--quote"class="btn btn-cta">
+                        Request Quote
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -245,7 +248,10 @@
                       combining various technologies that work in unison to deliver
                       experiences that amaze and delight users.
                       </p>
-                      <a href="#" class="btn btn-cta">Request Quote</a>
+                      <button type="button" data-toggle="modal"
+                       data-target="#modal--quote"class="btn btn-cta">
+                        Request Quote
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -260,7 +266,10 @@
                       combining various technologies that work in unison to deliver
                       experiences that amaze and delight users.
                       </p>
-                      <a href="#" class="btn btn-cta">Request Quote</a>
+                      <button type="button" data-toggle="modal"
+                       data-target="#modal--quote"class="btn btn-cta">
+                        Request Quote
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -323,10 +332,9 @@
               <address class="address">
                 <ul class="pl-4">
                   <li class="address-item address-item--location">
-                    Dynamic Multimedia<br>
-                    100 Pearl Street<br>
+                    100 Example Street<br>
                     14th Floor<br>
-                    Hartford, Connecticut<br>
+                    Awesome, Wicked<br>
                     06103
                   </li>
                   <li class="address-item address-item--telephone">
@@ -352,6 +360,98 @@
           Designed and built by Zebedee Lewis
         </div>
       </footer>
+    </div>
+    <div id="modal--quote" class="modal modal--quote"
+     tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Request A Quote</h5>
+            <button type="button" class="close"
+             data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="quote-form">
+              <div class="row quote-form__row">
+                <div class="col-12">
+                  <label for="quote-form__service">1. Select a service:</label>
+                  <select id="quote-form__service" name="quote-form__service"
+                   class="quote-form__service form-control" required>
+                    <option value="backhoe">Backhoe Rental</option>
+                    <option value="dumptruck">Dump Truck Rental</option>
+                    <option value="hydraulicHammer">Hydraulic Hammer</option>
+                    <option value="sandGrevel">Sand And Gravel</option>
+                  </select>
+                </div>
+              </div>
+              <div class="quote-form__rental-details quote-form__row row">
+                <div class="col-12">
+                  <p>2. For how long would you be renting</p>
+                </div>
+                <div class="col-4">
+                  <label for="quote-form__weeks">Weeks</label>
+                  <input id="quote-form__weeks" type="number" min="0" max="30"
+                   name="quote-form__weeks" required
+                   class="quote-form__weeks form-control">
+                </div>
+                <div class="col-4">
+                  <label for="quote-form__days">Days</label>
+                  <input id="quote-form__days" type="number" min="0" max="30"
+                   name="quote-form__days" required
+                   class="quote-form__days form-control">
+                </div>
+                <div class="col-4">
+                  <label for="quote-form__hours">Hours</label>
+                  <input id="quote-form__hours" type="number" min="0" max="30"
+                   name="quote-form__hours" required
+                   class="quote-form__hours form-control">
+                </div>
+              </div>
+              <div class="quote-form__quantity-details quote-form__row row d-none">
+                <div class="col-8">
+                  <label for="quote-form__loads">2. How many loads:</label>
+                  <input id="quote-form__loads" disabled required
+                   type="number" min="0" max="30"
+                   name="quote-form__loads"
+                   class="quote-form__loads form-control">
+                </div>
+              </div>
+              <div class="row quote-form__row">
+                <div class="col-12">
+                  <label for="quote-form__email">3. Email Address:</label>
+                  <input id="quote-form__email" required
+                   placeholder="example@example.com"
+                   class="quote-form__email form-control"
+                   type="email" name="quote-form__email">
+                </div>
+              </div>
+              <div class="row quote-form__row">
+                <div class="col-12">
+                  <label for="quote-form__name">4. Your Name:</label>
+                  <input id="quote-form__name" required placeholder="John Doe"
+                   class="quote-form__name form-control"
+                   type="input" name="quote-form__name">
+                </div>
+              </div>
+              <div class="row quote-form__row">
+                <div class="col-12">
+                  <label for="quote-form__phone">5. Your number (optional):</label>
+                  <input id="quote-form__phone" placeholder="777 7777"
+                   class="quote-form__phone form-control"
+                   type="tel" name="quote-form__phone">
+                </div>
+              </div>
+              <button type="submig" class="btn btn-success">
+                6. Submit Request
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

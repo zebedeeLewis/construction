@@ -327,6 +327,10 @@ p { margin-top: 0; }
   padding-bottom: 2rem;
 }
 
+.quote-form__row {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 425px) {
   .section--services.lazy-bg-loaded::before { 
     background: url("../img/backhoe.jpg") no-repeat 0% 60%/cover;
