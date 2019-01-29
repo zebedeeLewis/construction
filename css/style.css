@@ -151,9 +151,6 @@ p { margin-top: 0; }
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 4.5rem;
-}
-
-.value {
   box-sizing: border-box;
   text-align: center;
   padding-left: 1rem;
@@ -163,12 +160,12 @@ p { margin-top: 0; }
 .value__icon {
   height: 9rem;
   width: 9rem;
-  max-width: 100%;
 }
 
 .value__heading {
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
