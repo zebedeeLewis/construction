@@ -209,10 +209,7 @@ p { margin-top: 0; }
   margin-top: -.3em;
 }
 
-.section--services .btn {
-  max-width: 20rem;
-  padding-top: 0;
-}
+.section--services .btn { max-width: 20rem; }
 
 .section--services::before {
   content: " ";
@@ -232,6 +229,13 @@ p { margin-top: 0; }
 }
 
 .btn { text-transform: uppercase; }
+
+.btn-cta, .btn-outline-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .btn-cta {
   background-color: var(--accent-color);
