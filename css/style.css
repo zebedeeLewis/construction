@@ -230,13 +230,6 @@ p { margin-top: 0; }
 
 .btn { text-transform: uppercase; }
 
-.btn-cta, .btn-outline-cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .btn-cta {
   background-color: var(--accent-color);
   color: white;
