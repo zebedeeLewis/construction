@@ -57,7 +57,7 @@ p { margin-top: 0; }
 }
 
 .carousel--banner {
-  height: 70vh;
+  height: 92vh;
   overflow: hidden;
 }
 
@@ -124,10 +124,20 @@ p { margin-top: 0; }
 
 .section--about { padding-top: 0; }
 
+.heading--about {
+  text-transform: uppercase;
+  color: black;
+  font-size: 3rem;
+  max-width: 20rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
 .intro {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--second-background-color);
+  //background-color: var(--second-background-color);
+  background-color: white;
   padding-top: 18vh;
 }
 
@@ -258,7 +268,6 @@ p { margin-top: 0; }
   margin-top: 4.5rem;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
-  background-color: var(--second-background-color);
 }
 
 .service-card__header {
@@ -345,6 +354,7 @@ p { margin-top: 0; }
   .intro-caption {
     width: 50%;
     padding-right: 10%;
+    padding-left: 5%;
   }
 
 
