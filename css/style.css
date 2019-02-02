@@ -6,7 +6,8 @@
   --text-primary-color: #FFFFFF;
   --accent-color: #FF5722;
   --primary-text-color: #212121;
-  --second-background-color: hsla(53.9,100%,88.4%, 0.5);
+  --secondary-background-color: hsla(0, 0%, 74%, 0.1);
+  --primary-background-color: hsl(0, 100%, 100%);
   --secondary-text-color: #757575;
   --divider-color: #BDBDBD;
   --shadow-one: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -32,9 +33,9 @@ p { margin-top: 0; }
 }
 
 .navbar--main {
-  min-height: 12vh;
   font-size: 1rem;
   background-color: white;
+  padding-bottom: 1rem;
 }
 
 .navbar--stuck { box-shadow: var(--shadow-two); }
@@ -133,11 +134,14 @@ p { margin-top: 0; }
   margin-bottom: 1.5rem;
 }
 
+.main {
+  background-color: var(--secondary-background-color);
+}
+
 .intro {
   display: flex;
   flex-wrap: wrap;
-  //background-color: var(--second-background-color);
-  background-color: white;
+  background-color: var(--primary-background-color);
   padding-top: 18vh;
 }
 
@@ -160,11 +164,12 @@ p { margin-top: 0; }
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 4.5rem;
+  padding-top: 4.5rem;
   box-sizing: border-box;
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: var(--secondary-background-color);
 }
 
 .value__icon {
@@ -265,6 +270,11 @@ p { margin-top: 0; }
   margin-top: 4.5rem;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+  background-color: var(--secondary-background-color);
+}
+
+.card {
+  background: transparent;
 }
 
 .service-card__header {
