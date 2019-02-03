@@ -220,7 +220,7 @@ p { margin-top: 0; }
 }
 
 .section--services.lazy-bg-loaded::before {
-  background: url("../img/backhoe.jpg") no-repeat center/cover;
+  background: url("../img/backhoe.jpg") no-repeat center/contain;
 }
 
 .btn-outline-cta {
@@ -334,12 +334,6 @@ p { margin-top: 0; }
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 425px) {
-  .section--services.lazy-bg-loaded::before { 
-    background: url("../img/backhoe.jpg") no-repeat 0% 60%/cover;
-  }
-}
-
 @media (min-width: 768px) {
   .navbar--main__collapse {
     border-radius: 0;
@@ -370,10 +364,6 @@ p { margin-top: 0; }
     height: 100vh;
   }
   
-  .section--services.lazy-bg-loaded::before { 
-    background: url("../img/backhoe.jpg") no-repeat 0% 60%/95% 95%;
-  }
-
   .service-caption {
     height: 100vh;
     position: relative;

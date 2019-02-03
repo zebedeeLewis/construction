@@ -1,77 +1,80 @@
-
 const controls = (function() {
-'use strict'
+  "use strict";
 
-const WRAPPER_ID = 'wrapper';
-const NAVBAR_ID = 'navbar--main';
+  const WRAPPER_ID = "wrapper";
+  const NAVBAR_ID = "navbar--main";
 
-const Config = {
+  const Config = {
     buffer: 12, // px
-    defaultThrottleDelay: 200,  // milliseconds
-};
+    defaultThrottleDelay: 200 // milliseconds
+  };
 
-const BEMBlock = {
-    init: function(blockName, elementNameList, modifierNameList) {
-        this.block = blockName;
-        this.elements = elementNameList.reduce(function (elements, name) {
-            elements[name] = `${this.block}__${name}`
-            return elements
-        }.bind(this), {});
-        this.modifiers = modifierNameList.reduce(function (modifiers, name) {
-            modifiers[name] = `${this.block}--${name}`
-            return modifiers
-        }.bind(this), {});
-    },
-};
+  function BEMBlock(blockName, elementNameList, modifierNameList) {
+    this.block = blockName;
+    this.elements = elementNameList.reduce(
+      function(elements, name) {
+        elements[name] = `${this.block}__${name}`;
+        return elements;
+      }.bind(this),
+      {}
+    );
+    this.modifiers = modifierNameList.reduce(
+      function(modifiers, name) {
+        modifiers[name] = `${this.block}--${name}`;
+        return modifiers;
+      }.bind(this),
+      {}
+    );
+  }
 
-const ClassNames = {};
-ClassNames.ctaForm = Object.create(BEMBlock);
-ClassNames.ctaForm.init('cta-form', ['collapse-toggler', 'collapse'], []);
+  const ClassNames = {};
+  ClassNames.navBar = new BEMBlock("navbar", [], ["stuck"]);
+  ClassNames.wrapper = new BEMBlock("wrapper", [], []);
+  ClassNames.ctaForm = new BEMBlock(
+    "cta-form",
+    ["collapse-toggler", "collapse"],
+    []
+  );
 
-ClassNames.navBar = Object.create(BEMBlock);
-ClassNames.navBar.init('navbar', [], ['stuck']);
+  const elById = id => document.getElementById(id);
 
-ClassNames.wrapper = Object.create(BEMBlock);
-ClassNames.wrapper.init('wrapper', [], []);
-
-let $ = (id) => document.getElementById(id);
-
-let beyondThreshold = (targetElement) => 
+  const beyondThreshold = targetElement =>
     Number.parseInt(targetElement.scrollTop) > Config.buffer;
 
-let ret = {};
-
-ret.throttle = (func, delay, ...args) => {
+  const throttle = (func, delay, ...args) => {
     let fired = false;
-    return function () {
-        if (!fired) {
-            fired = true
-            window.setTimeout(()=>{
-                fired = false
-                func.apply(this, args)
-            }, delay || Options.defaultThrottleDelay)
-        }
-    }
-}
+    return function() {
+      if (!fired) {
+        fired = true;
+        window.setTimeout(() => {
+          fired = false;
+          func.apply(this, args);
+        }, delay || Config.defaultThrottleDelay);
+      }
+    };
+  };
 
-ret.toggleStuck = (targetElement, watchedElement) => {
+  const toggleStuck = (targetElement, watchedElement) => {
     if (beyondThreshold(watchedElement)) {
-        targetElement.classList.add(ClassNames.navBar.modifiers.stuck);
+      targetElement.classList.add(ClassNames.navBar.modifiers.stuck);
     } else {
-        targetElement.classList.remove(ClassNames.navBar.modifiers.stuck);
+      targetElement.classList.remove(ClassNames.navBar.modifiers.stuck);
     }
-}
+  };
 
-ret.init = () => {
-    document.addEventListener("DOMContentLoaded", ()=> {
-        yall()
-        $(WRAPPER_ID).addEventListener("scroll", 
-            ret.throttle(ret.toggleStuck, 1000, $(NAVBAR_ID), $(WRAPPER_ID)))
-    });
-}
-
-return ret;
+  return {
+    init: () => {
+      document.addEventListener("DOMContentLoaded", () => {
+        yall();
+        elById(WRAPPER_ID).addEventListener(
+          "scroll",
+          throttle(toggleStuck, 400, elById(NAVBAR_ID), elById(WRAPPER_ID))
+        );
+      });
+    }
+  };
 
 })();
 
 controls.init();
+
