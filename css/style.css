@@ -35,6 +35,9 @@ p { margin-top: 0; }
   font-size: 1rem;
   background-color: white;
   padding-bottom: 1rem;
+  transition-property: box-shadow;
+  transition-timing-function: linear;
+  transition-duration: .2s;
 }
 
 .navbar--stuck { box-shadow: var(--shadow-two); }
